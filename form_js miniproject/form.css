@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+}
+body{
+    width: 100vm;
+    height: 100vh;
+    background-color: rgb(55, 238, 86);
+    display: grid;
+    place-items: center;
+}
+.container {
+    background-color: white;
+    width:500px;
+    padding: 10px;
+}
+.container h1{
+    font-weight: 1000;
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
+label{
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+    color: blueviolet;
+}
+
+.form{
+    padding: 0px 30px;
+}
+.form_content{
+    margin: 10px;
+    padding: 10px;
+}
+input{
+    border: 3px solid rgb(233, 216, 216);
+    width: 100%;
+    padding: 10px;
+}
+.form_content p{
+    margin-top: 5px; 
+    font-size: 15px;
+    visibility: hidden;
+}
+#submit{
+    margin-top: 0px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background-color: blueviolet;
+    border: 2px solid grey;
+}
+.form_content.error p{
+    visibility: visible;
+    color: red;
+}
+.form_content.error input{
+    border-color: red;
+}
+.form_content.success input{
+    border-color:green;
+}
